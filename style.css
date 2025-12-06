@@ -1,0 +1,113 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Zakładki */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.tab {
+    background-color: #C05050;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.tab.active {
+    background-color: #9B3030;
+}
+
+/* Główna sekcja */
+.main {
+    display: flex;
+    gap: 20px;
+}
+
+/* Timer */
+.timer-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.timer {
+    font-size: 80px;
+    font-weight: bold;
+    color: #C05050;
+    margin-bottom: 20px;
+}
+.controls button {
+    background-color: #C05050;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.controls button:hover {
+    background-color: #9B3030;
+}
+.sessions {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* Tasks */
+.tasks-section {
+    width: 300px;
+    background-color: #ffe5e5;
+    padding: 15px;
+    border-radius: 10px;
+}
+.tasks-section h2 {
+    text-align: center;
+    color: #C05050;
+}
+.tasks-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+.tasks-section li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.tasks-section input {
+    width: calc(100% - 80px);
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.tasks-section button {
+    background-color: #C05050;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.tasks-section button:hover {
+    background-color: #9B3030;
+}
