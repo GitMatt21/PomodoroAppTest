@@ -3,40 +3,31 @@ body {
     background-color: #fff5f5;
     margin: 0;
     padding: 0;
-
-    /* Wyśrodkowanie całego UI na środku ekranu */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
-/* Kontener główny */
 .container {
-    width: 1100px;
-    transform: scale(1.1); /* delikatne powiększenie całej aplikacji */
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-/* Zakładki nad timerem */
+/* Zakładki */
 .tabs {
     display: flex;
     justify-content: center;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
-
 .tab {
     background-color: #C05050;
     color: white;
     border: none;
-    padding: 12px 25px;
-    margin: 0 8px;
+    padding: 10px 20px;
+    margin: 0 5px;
     border-radius: 10px;
     font-weight: bold;
-    font-size: 18px;
     cursor: pointer;
     transition: background 0.3s;
 }
-
 .tab.active {
     background-color: #9B3030;
 }
@@ -44,53 +35,46 @@ body {
 /* Główna sekcja */
 .main {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 40px;
+    gap: 20px;
 }
 
-/* TIMER */
+/* Timer */
 .timer-section {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .timer {
-    font-size: 110px;
+    font-size: 80px;
     font-weight: bold;
     color: #C05050;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
-
 .controls button {
     background-color: #C05050;
     color: white;
     border: none;
     border-radius: 10px;
-    padding: 12px 25px;
-    margin: 7px;
-    font-size: 18px;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
     cursor: pointer;
-    transition: background 0.3s;
 }
-
 .controls button:hover {
     background-color: #9B3030;
 }
-
 .sessions {
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
-/* TASKS SEKCJA */
+/* Tasks Section */
 .tasks-section {
-    width: 340px;
+    width: 300px;
     background-color: #ffe5e5;
-    padding: 20px;
-    border-radius: 12px;
+    padding: 15px;
+    border-radius: 10px;
     box-sizing: border-box;
 }
 
@@ -98,70 +82,66 @@ body {
     text-align: center;
     color: #C05050;
     margin-top: 0;
-    font-size: 26px;
 }
 
 .tasks-section ul {
     list-style: none;
     padding: 0;
-    margin: 0 0 12px 0;
+    margin: 0 0 10px 0;
 }
 
 .tasks-section li {
     display: flex;
-    align-items: center;
+    align-items: center;      
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     background-color: white;
-    padding: 8px 12px;
-    border-radius: 6px;
-    gap: 12px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    gap: 10px;                
 }
 
 .tasks-section li input[type="checkbox"] {
-    flex-shrink: 0;
+    flex-shrink: 0;       
 }
 
 .tasks-section li span {
-    flex-grow: 1;
-    margin-left: 8px;
-    word-break: break-word;
-    font-size: 16px;
+    flex-grow: 1;              
+    margin-left: 5px;
+    word-break: break-word;   
 }
 
 .tasks-section li button {
-    flex-shrink: 0;
+    flex-shrink: 0;            /* przycisk nie kurczy się */
     background-color: #C05050;
     color: white;
     border: none;
-    border-radius: 6px;
-    padding: 6px 10px;
-    font-size: 14px;
+    border-radius: 5px;
+    padding: 5px 10px;
     cursor: pointer;
+    transition: background 0.3s;
 }
 
 .tasks-section li button:hover {
     background-color: #9B3030;
 }
 
-/* INPUT + BUTTON ADD TASK */
 .tasks-section input[type="text"] {
-    width: 100%;
-    padding: 8px;
-    border-radius: 6px;
+    width: calc(100% - 90px);  /* zostawia miejsce na przycisk "Add Task" */
+    padding: 5px;
+    border-radius: 5px;
     border: 1px solid #ccc;
-    margin-bottom: 10px;
-    font-size: 15px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
 }
 
 .tasks-section #addTaskBtn {
-    width: 100%;
+    width: 80px;
     background-color: #C05050;
     color: white;
     border: none;
-    border-radius: 6px;
-    padding: 10px;
-    font-size: 16px;
+    border-radius: 5px;
+    padding: 5px 0;
     cursor: pointer;
     transition: background 0.3s;
 }
