@@ -9,41 +9,33 @@
 <body>
     <div class="container">
 
-        <!-- Zakładki -->
+        <!-- Zakładki trybów -->
         <div class="tabs">
-            <button class="tab active" id="pomodoroTab">Pomodoro</button>
-            <button class="tab" id="shortBreakTab">Short Break</button>
-            <button class="tab" id="longBreakTab">Long Break</button>
+            <button class="tab active" data-mode="pomodoro">Pomodoro</button>
+            <button class="tab" data-mode="short">Short Break</button>
+            <button class="tab" data-mode="long">Long Break</button>
         </div>
 
+        <!-- Główna sekcja: timer i lista zadań -->
         <div class="main">
-
-            <!-- TIMER -->
             <div class="timer-section">
                 <div class="timer" id="timer">25:00</div>
-
                 <div class="controls">
-                    <button id="startBtn">Start</button>
-                    <button id="pauseBtn">Pause</button>
-                    <button id="resetBtn">Reset</button>
+                    <button id="startBtn">START</button>
+                    <button id="pauseBtn">PAUSE</button>
+                    <button id="resetBtn">RESET</button>
                 </div>
-
-                <div class="sessions">
-                    Sessions: <span id="sessionCount">0</span>
-                </div>
+                <div class="sessions">Completed Sessions: <span id="sessionCount">0</span></div>
             </div>
 
-            <!-- TASKS -->
             <div class="tasks-section">
                 <h2>Tasks</h2>
-
                 <ul id="taskList"></ul>
-
                 <input type="text" id="taskInput" placeholder="New task">
                 <button id="addTaskBtn">Add Task</button>
             </div>
-
         </div>
+
     </div>
 
     <script src="script.js"></script>
